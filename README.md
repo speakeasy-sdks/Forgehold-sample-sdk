@@ -7,7 +7,7 @@
 </div>
 
 <!-- Start SDK Installation -->
-# SDK Installation
+## SDK Installation
 
 ```bash
 go get github.com/speakeasy-sdks/Forgehold-sample-sdk
@@ -16,8 +16,6 @@ go get github.com/speakeasy-sdks/Forgehold-sample-sdk
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```go
 package main
 
@@ -37,8 +35,8 @@ func main() {
 		Email:     "Della67@yahoo.com",
 		Firstname: "Enrique",
 		Lastname:  "Ernser",
-		Nickname:  "panel",
-		Password:  "OXx1B29WwlhtAAe",
+		Nickname:  "string",
+		Password:  "TOXx1B29WwlhtAA",
 	})
 	if err != nil {
 		log.Fatal(err)
@@ -53,9 +51,9 @@ func main() {
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-# Available Resources and Operations
+## Available Resources and Operations
 
-## [UserAPIForSpeakeasyTemplateService SDK](docs/sdks/userapiforspeakeasytemplateservice/README.md)
+### [UserAPIForSpeakeasyTemplateService SDK](docs/sdks/userapiforspeakeasytemplateservice/README.md)
 
 * [CreateUserv1](docs/sdks/userapiforspeakeasytemplateservice/README.md#createuserv1) - Create user
 * [DeleteUserv1](docs/sdks/userapiforspeakeasytemplateservice/README.md#deleteuserv1) - Delete a user by ID
@@ -66,8 +64,6 @@ func main() {
 <!-- End SDK Available Operations -->
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 

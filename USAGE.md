@@ -15,7 +15,7 @@ func main() {
 	s := forgeholdsamplesdk.New()
 
 	ctx := context.Background()
-	res, err := s.UserAPIForSpeakeasyTemplateService.CreateUserv1(ctx, shared.UserInput{
+	res, err := s.CreateUserv1(ctx, shared.UserInput{
 		Country:   "Benin",
 		Email:     "Della67@yahoo.com",
 		Firstname: "Enrique",

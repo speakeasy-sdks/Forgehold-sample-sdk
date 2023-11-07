@@ -8,16 +8,16 @@ import (
 )
 
 type UpdateUserv1Request struct {
-	UserInput shared.UserInput `request:"mediaType=application/json"`
+	User shared.UserInput `request:"mediaType=application/json"`
 	// UserID
 	ID string `pathParam:"style=simple,explode=false,name=id"`
 }
 
-func (o *UpdateUserv1Request) GetUserInput() shared.UserInput {
+func (o *UpdateUserv1Request) GetUser() shared.UserInput {
 	if o == nil {
 		return shared.UserInput{}
 	}
-	return o.UserInput
+	return o.User
 }
 
 func (o *UpdateUserv1Request) GetID() string {

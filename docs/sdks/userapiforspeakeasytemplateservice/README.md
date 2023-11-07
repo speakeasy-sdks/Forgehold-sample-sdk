@@ -34,7 +34,7 @@ func main() {
     s := forgeholdsamplesdk.New()
 
     ctx := context.Background()
-    res, err := s.UserAPIForSpeakeasyTemplateService.CreateUserv1(ctx, shared.UserInput{
+    res, err := s.CreateUserv1(ctx, shared.UserInput{
         Country: "Benin",
         Email: "Della67@yahoo.com",
         Firstname: "Enrique",
@@ -85,7 +85,7 @@ func main() {
     s := forgeholdsamplesdk.New()
 
     ctx := context.Background()
-    res, err := s.UserAPIForSpeakeasyTemplateService.DeleteUserv1(ctx, operations.DeleteUserv1Request{
+    res, err := s.DeleteUserv1(ctx, operations.DeleteUserv1Request{
         ID: "<ID>",
     })
     if err != nil {
@@ -130,7 +130,7 @@ func main() {
     s := forgeholdsamplesdk.New()
 
     ctx := context.Background()
-    res, err := s.UserAPIForSpeakeasyTemplateService.GetHealth(ctx)
+    res, err := s.GetHealth(ctx)
     if err != nil {
         log.Fatal(err)
     }
@@ -173,7 +173,7 @@ func main() {
     s := forgeholdsamplesdk.New()
 
     ctx := context.Background()
-    res, err := s.UserAPIForSpeakeasyTemplateService.GetUserv1(ctx, operations.GetUserv1Request{
+    res, err := s.GetUserv1(ctx, operations.GetUserv1Request{
         ID: "<ID>",
     })
     if err != nil {
@@ -219,7 +219,7 @@ func main() {
     s := forgeholdsamplesdk.New()
 
     ctx := context.Background()
-    res, err := s.UserAPIForSpeakeasyTemplateService.SearchUsersv1(ctx, shared.Filters{
+    res, err := s.SearchUsersv1(ctx, shared.Filters{
         Filters: []shared.Filter{
             shared.Filter{
                 Field: "string",
@@ -272,8 +272,8 @@ func main() {
     s := forgeholdsamplesdk.New()
 
     ctx := context.Background()
-    res, err := s.UserAPIForSpeakeasyTemplateService.UpdateUserv1(ctx, operations.UpdateUserv1Request{
-        UserInput: shared.UserInput{
+    res, err := s.UpdateUserv1(ctx, operations.UpdateUserv1Request{
+        User: shared.UserInput{
             Country: "Reunion",
             Email: "Anjali_Mann@gmail.com",
             Firstname: "Miracle",

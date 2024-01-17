@@ -89,3 +89,13 @@ Based on:
 - [go v0.6.0] .
 ### Releases
 - [Go v0.6.0] https://github.com/speakeasy-sdks/Forgehold-sample-sdk/releases/tag/v0.6.0 - .
+
+## 2024-01-17 01:17:58
+### Changes
+Based on:
+- OpenAPI Doc 0.1.0 
+- Speakeasy CLI 1.142.1 (2.234.3) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.6.1] .
+### Releases
+- [Go v0.6.1] https://github.com/speakeasy-sdks/Forgehold-sample-sdk/releases/tag/v0.6.1 - .

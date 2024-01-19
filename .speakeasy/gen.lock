@@ -4,7 +4,7 @@ management:
   docChecksum: b3cde103f3a8cd2dc7100b66267790bb
   docVersion: 0.1.0
   speakeasyVersion: internal
-  generationVersion: 2.234.3
+  generationVersion: 2.237.2
   releaseVersion: 0.6.1
   configChecksum: 541d15f163b09326244f20ae1efbf766
   repoURL: https://github.com/speakeasy-sdks/Forgehold-sample-sdk.git
@@ -20,7 +20,6 @@ generatedFiles:
   - userapiforspeakeasytemplateservice.go
   - go.mod
   - go.sum
-  - tests/helpers.go
   - pkg/models/sdkerrors/sdkerror.go
   - pkg/types/bigint.go
   - pkg/types/date.go

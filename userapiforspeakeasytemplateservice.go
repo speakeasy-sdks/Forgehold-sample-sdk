@@ -123,9 +123,9 @@ func New(opts ...SDKOption) *UserAPIForSpeakeasyTemplateService {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "0.1.0",
-			SDKVersion:        "0.8.0",
-			GenVersion:        "2.258.2",
-			UserAgent:         "speakeasy-sdk/go 0.8.0 2.258.2 0.1.0 github.com/speakeasy-sdks/Forgehold-sample-sdk",
+			SDKVersion:        "0.8.1",
+			GenVersion:        "2.263.3",
+			UserAgent:         "speakeasy-sdk/go 0.8.1 2.263.3 0.1.0 github.com/speakeasy-sdks/Forgehold-sample-sdk",
 			Hooks:             hooks.New(),
 		},
 	}
@@ -169,12 +169,12 @@ func (s *UserAPIForSpeakeasyTemplateService) CreateUserv1(ctx context.Context, r
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
 	req.Header.Set("Content-Type", reqContentType)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -197,7 +197,6 @@ func (s *UserAPIForSpeakeasyTemplateService) CreateUserv1(ctx context.Context, r
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.CreateUserv1Response{
@@ -264,12 +263,12 @@ func (s *UserAPIForSpeakeasyTemplateService) DeleteUserv1(ctx context.Context, r
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -292,7 +291,6 @@ func (s *UserAPIForSpeakeasyTemplateService) DeleteUserv1(ctx context.Context, r
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.DeleteUserv1Response{
@@ -359,12 +357,12 @@ func (s *UserAPIForSpeakeasyTemplateService) GetHealth(ctx context.Context) (*op
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -387,7 +385,6 @@ func (s *UserAPIForSpeakeasyTemplateService) GetHealth(ctx context.Context) (*op
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetHealthResponse{
@@ -443,12 +440,12 @@ func (s *UserAPIForSpeakeasyTemplateService) GetUserv1(ctx context.Context, requ
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -471,7 +468,6 @@ func (s *UserAPIForSpeakeasyTemplateService) GetUserv1(ctx context.Context, requ
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetUserv1Response{
@@ -544,12 +540,12 @@ func (s *UserAPIForSpeakeasyTemplateService) SearchUsersv1(ctx context.Context, 
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
 	req.Header.Set("Content-Type", reqContentType)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -572,7 +568,6 @@ func (s *UserAPIForSpeakeasyTemplateService) SearchUsersv1(ctx context.Context, 
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.SearchUsersv1Response{
@@ -632,12 +627,12 @@ func (s *UserAPIForSpeakeasyTemplateService) UpdateUserv1(ctx context.Context, r
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
 	req.Header.Set("Content-Type", reqContentType)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -660,7 +655,6 @@ func (s *UserAPIForSpeakeasyTemplateService) UpdateUserv1(ctx context.Context, r
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.UpdateUserv1Response{

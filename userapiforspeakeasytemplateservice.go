@@ -122,9 +122,9 @@ func New(opts ...SDKOption) *UserAPIForSpeakeasyTemplateService {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "0.1.0",
-			SDKVersion:        "0.9.0",
-			GenVersion:        "2.279.1",
-			UserAgent:         "speakeasy-sdk/go 0.9.0 2.279.1 0.1.0 github.com/speakeasy-sdks/Forgehold-sample-sdk",
+			SDKVersion:        "0.9.1",
+			GenVersion:        "2.280.6",
+			UserAgent:         "speakeasy-sdk/go 0.9.1 2.280.6 0.1.0 github.com/speakeasy-sdks/Forgehold-sample-sdk",
 			Hooks:             hooks.New(),
 		},
 	}
